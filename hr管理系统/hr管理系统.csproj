@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BB3CFD1-6B6A-4E83-9406-2D34A0C55974}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hr管理系统</RootNamespace>
+    <AssemblyName>hr管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_From_manege.cs" />
+    <Compile Include="Class_mydbcon.cs" />
+    <Compile Include="Fm_addresslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_addresslist.Designer.cs">
+      <DependentUpon>Fm_addresslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_add_addresslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_add_addresslist.Designer.cs">
+      <DependentUpon>Fm_add_addresslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_add_rp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_add_rp.Designer.cs">
+      <DependentUpon>Fm_add_rp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_branch_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_branch_change.Designer.cs">
+      <DependentUpon>Fm_branch_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_branch_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_branch_delete.Designer.cs">
+      <DependentUpon>Fm_branch_delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_exp.Designer.cs">
+      <DependentUpon>Fm_exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_find.Designer.cs">
+      <DependentUpon>Fm_find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_register.Designer.cs">
+      <DependentUpon>Fm_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_rp_delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_rp_delete.Designer.cs">
+      <DependentUpon>Fm_rp_delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_salary_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_salary_change.Designer.cs">
+      <DependentUpon>Fm_salary_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_salary_change_partcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_salary_change_partcial.Designer.cs">
+      <DependentUpon>Fm_salary_change_partcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_worktype_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_worktype_change.Designer.cs">
+      <DependentUpon>Fm_worktype_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_worktype_partcial_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_worktype_partcial_change.Designer.cs">
+      <DependentUpon>Fm_worktype_partcial_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_details.Designer.cs">
+      <DependentUpon>Fm_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_hr_manegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_hr_manegment.Designer.cs">
+      <DependentUpon>Fm_hr_manegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_main.Designer.cs">
+      <DependentUpon>Fm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_login.Designer.cs">
+      <DependentUpon>Fm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_randp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_randp.Designer.cs">
+      <DependentUpon>Fm_randp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_resume.Designer.cs">
+      <DependentUpon>Fm_resume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_resume_find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_resume_find.Designer.cs">
+      <DependentUpon>Fm_resume_find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_salary.Designer.cs">
+      <DependentUpon>Fm_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_set_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_set_user.Designer.cs">
+      <DependentUpon>Fm_set_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_branch.Designer.cs">
+      <DependentUpon>Fm_branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_worktype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_worktype.Designer.cs">
+      <DependentUpon>Fm_worktype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fm_addresslist.resx">
+      <DependentUpon>Fm_addresslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_add_addresslist.resx">
+      <DependentUpon>Fm_add_addresslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_add_rp.resx">
+      <DependentUpon>Fm_add_rp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_branch.resx">
+      <DependentUpon>Fm_branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_branch_change.resx">
+      <DependentUpon>Fm_branch_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_branch_delete.resx">
+      <DependentUpon>Fm_branch_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_exp.resx">
+      <DependentUpon>Fm_exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_find.resx">
+      <DependentUpon>Fm_find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_register.resx">
+      <DependentUpon>Fm_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_rp_delete.resx">
+      <DependentUpon>Fm_rp_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_salary_change.resx">
+      <DependentUpon>Fm_salary_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_salary_change_partcial.resx">
+      <DependentUpon>Fm_salary_change_partcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_worktype_change.resx">
+      <DependentUpon>Fm_worktype_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_worktype_partcial_change.resx">
+      <DependentUpon>Fm_worktype_partcial_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_details.resx">
+      <DependentUpon>Fm_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_hr_manegment.resx">
+      <DependentUpon>Fm_hr_manegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_main.resx">
+      <DependentUpon>Fm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_login.resx">
+      <DependentUpon>Fm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_randp.resx">
+      <DependentUpon>Fm_randp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_resume.resx">
+      <DependentUpon>Fm_resume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_resume_find.resx">
+      <DependentUpon>Fm_resume_find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_salary.resx">
+      <DependentUpon>Fm_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_set_user.resx">
+      <DependentUpon>Fm_set_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_worktype.resx">
+      <DependentUpon>Fm_worktype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addlist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main%286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\默认头像.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
